@@ -70,10 +70,13 @@ const lst = [
 const productId = localStorage.getItem("productId");
 prodid = +productId;
 const bigdiv = document.querySelector(".prodpg")
+const snd = document.querySelector(".buy")
 const pr = document.getElementById("prod");
 const pric = document.getElementById("pr")
 const productid = document.getElementById("prodid");
 const prname = document.getElementById("prname")
+const buynow = document.getElementById("buynow");
+const send = document.getElementById("send")
 function createback(){
     for(let i =0; i<lst.length; i++){
         if(lst[i].id ===prodid){
@@ -88,3 +91,13 @@ function createback(){
     }
 }
 createback()
+buynow.addEventListener("click", ()=>{
+    bigdiv.classList.add("activ")
+    snd.classList.remove("activ")
+
+})
+send.addEventListener("click", ()=>{
+    
+    bigdiv.classList.remove("activ")
+    snd.classList.add("activ")
+})

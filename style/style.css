@@ -387,9 +387,6 @@ header i{
     
     
 }
-.activ{
-    display: none;
-}
 
 
 .registration input{
@@ -418,6 +415,7 @@ header i{
     margin: auto;
     padding: 50px;
     display: flex;
+   
 }
 .prodpg section{
     margin-left: 150px;
@@ -441,6 +439,7 @@ header i{
     color: white;
     font-size: 24px;
     cursor: pointer;
+    border: none;
 }
 #prod{
     width: 300px;
@@ -448,6 +447,35 @@ header i{
     background-color: blue;
     
     
+}
+.buy{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.buy input{
+    width: 300px;
+    height: 30px;
+    font-size: 24px;
+
+}
+.buy button{
+    width: 120px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: grey;
+    border: none;
+    cursor: pointer;
+}
+.activ{
+    display: none;
 }
 
 
